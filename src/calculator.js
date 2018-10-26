@@ -11,13 +11,26 @@ class Calculator extends React.Component {
     this.state = {calcScreen:''}
     this.handleClick = this.handleClick.bind(this)
   }
+
+
+
   handleClick(e){
+    //This function is fired when the onClick prop inside Calculator Body is triggered
+    //<CalculatorBody onClick={this.handleClick}/> this passes the onClick prop down to CalculatorBody
+    //Inside calculator body
+
     if(e.target.value === 'C'){
       this.clearInput()
     }else{
       let calcString = this.state.calcScreen + e.target.value
       this.setState({calcScreen:calcString})
     }
+    // switch(e.target.value){
+    //   case 'C': this.clearInput();
+    //   break;
+    //   default: let calcString = this.state.calcScreen + e.target.value
+    //   this.setState({calcScreen:calcString})
+    // }
   }
   clearInput(){
     this.setState({calcScreen:''})
@@ -36,7 +49,6 @@ class Calculator extends React.Component {
               <CalculatorBody onClick={this.handleClick}/>
             </div>
           </div>
-
         </div>
       </div>
     );
