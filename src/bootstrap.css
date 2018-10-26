@@ -1,5 +1,4 @@
-/*! THIS FILE HAS BEEN EDITED FOR REACT-CALCULATOR DO NOT USE ELSEWHERE
- * -----ATTENTION------^^^^^^^^^^^^^^^^^^^^^----ATTENTION---------
+/*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -2902,7 +2901,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 1.5rem 3rem;
+  padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
